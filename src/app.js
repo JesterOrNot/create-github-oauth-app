@@ -9,7 +9,7 @@ const appDescription = prompt("What is the app description?: ");
 const callBackURL = prompt("What is the callback URL?: ");
 
 (async () => {
-  const browser = await puppeteer.launch({headless: true});
+  const browser = await puppeteer.launch({nosandbox: true, args: ['--no-sandbox', '--disable-setuid-sandbox']});
 
   const page1 = await browser.newPage();
   await page1.goto('https://github.com/login');
@@ -17,6 +17,7 @@ const callBackURL = prompt("What is the callback URL?: ");
   await page1.type('#password', password);
   await page1.click('[name="commit"]');
   await page1.waitForNavigation();
+  prompt("")
   await page1.screenshot({ path: 'image.png' });
 
   const page2 = await browser.newPage();
