@@ -1,0 +1,23 @@
+{
+  "name": "create-github-oauth-app",
+  "version": "1.0.0",
+  "description": "Creates a GitHub OAuth App from the CLI",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesterOrNot/create-github-oauth-app.git"
+  },
+  "author": "Sean Hellum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JesterOrNot/create-github-oauth-app/issues"
+  },
+  "homepage": "https://github.com/JesterOrNot/create-github-oauth-app#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "puppeteer": "^5.2.1"
+  }
+}
